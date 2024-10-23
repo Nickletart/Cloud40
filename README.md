@@ -49,3 +49,13 @@ Compiling the firmware.
 ![Flashing the Firmware](images/flashing_firmware.png)
 
 Flashing the firmware using the QMK toolbox app.
+
+![Keyboard Testing](images/testing_keyboard.png)
+
+Success!
+
+## The Final Keyboard
+
+![Final Keyboard](images/finished_board.jpeg)
+
+Here’s the finished keyboard. I chose a set of keycaps that have a uniform height, allowing for easy interchange if the user wants to switch keymaps.
