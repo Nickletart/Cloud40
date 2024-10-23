@@ -37,3 +37,15 @@ The switches I used for this keyboard were the Gateron Clears, which have a plea
 ## Firmware
 
 The firmware for this keyboard was built using QMK, which converts my code into a .hex file that I can flash onto the Pro Micros.
+
+![Cloud40 Firmware Code](images/firmware_code.png)
+
+Here is where I create the keymap of the keyboard. Shown above is the base layer, which is the standard qwerty layout along with a few essential modifiers.
+
+![Firmware Compiling](images/firmware_compiling.png)
+
+Compiling the firmware.
+
+![Flashing the Firmware](images/flashing_firmware.png)
+
+Flashing the firmware using the QMK toolbox app.
