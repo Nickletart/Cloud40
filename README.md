@@ -1,14 +1,14 @@
 # Cloud40 - Designed by Brandon Zhang
 
 ## Overview
-Hi! I’m Brandon, and welcome to my cloud40 build log. This space is dedicated to showcasing the steps I went through to design this keyboard, as well as any thoughts or insights I want to provide to explain the process.
+Hi! I’m Brandon, and welcome to my cloud40 build log. This space is dedicated to showcasing the steps I went through to design the cloud40, as well as any thoughts or insights I want to provide to explain the process.
 
 ## Initial Concept
 ![Cloud40 Concept Drawing](images/cloud40_concept.png)
 
-The cloud40 is a split keyboard that allows the user to position each half wherever they want. The keys are arranged in a grid-like fashion, and the columns are then staggered to match the natural contours of the hand. There are only three rows for each finger to minimize stretching and unnecessary movement. Full functionality is achieved through one of the four thumb keys on the bottom, which toggles between letter, number, and function layers, similar to a phone keyboard. 
+The cloud40 is a split keyboard that allows the user to position each half wherever they want. The keys are arranged in a grid-like fashion, and the columns are then staggered to match the natural contours of the hand. There are only three rows for each finger to minimize stretching and unnecessary movement. Full functionality is achieved through one of the four thumb keys on the bottom, which toggles between letter, number, and function layers, similar to a phone keyboard. The main goal of this keyboard is to provide a comfortable typing experience for people with arthritis.
 
-Each half is controlled by an Arduino Pro Micro. The two microcontrollers are connected through a TRRS audio cable, since a USB connection poses a risk of the computer mistaking it for a normal connection and shorting out the device.
+Each half is controlled by an Arduino Pro Micro microcontroller, which detects the keypresses and sends the information to the computer. The two microcontrollers are connected through a TRRS audio cable, since a USB connection poses a risk of the computer mistaking it for a normal connection and shorting out the device.
 
 ## 3D Modeling
 ![3D Model of Cloud40](images/fusion_360_board.png)
@@ -23,7 +23,7 @@ I was already familiar with the dimensions of a mechanical keyboard, so initiall
 ## Wiring Matrix
 ![Wiring diagram of Cloud40](images/wiring_matrix_cloud40.png)
 
-Each key switch has two metal pins on the bottom, which are used to wire them up to a circuit board. However, since this keyboard is wired by hand, each pin needs to have a way to communicate with the central microcontroller. Since the Pro Micro doesn’t have enough pins to accommodate all 20 keys individually, each row and each column are assigned to a pin, as shown above. That way, when a key is pressed, the microcontroller knows which row and which column the key is in and can output the correct character. Each row pin has a diode attached to it (shown above in green), only allowing the current to flow in one direction. This ensures the microcontroller can correctly detect the input from each individual key if multiple keys are pressed simultaneously.
+Each key switch has two metal pins on the bottom, which are used to wire them up to a circuit board. However, since this keyboard is wired by hand, each pin needs to have a way to communicate with the central microcontroller. Since the Pro Micro doesn’t have enough pins to accommodate all 20 keys individually, each row and each column (shown above in blue and red, respectively) is assigned to a pin. That way, when a key is pressed, the microcontroller knows which row and which column the key is in and can output the correct character. Each row pin has a diode attached to it (shown in green), only allowing the current to flow in one direction. This ensures the microcontroller can correctly detect the input from each individual key if multiple keys are pressed simultaneously.
 
 ## Assembly
 ![Wiring of Cloud40](images/back_view_board.jpeg)
