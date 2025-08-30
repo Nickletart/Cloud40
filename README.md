@@ -6,7 +6,7 @@ Hi! I’m Brandon, and welcome to my cloud40 build log. This space is dedicated 
 ## Initial Concept
 ![Cloud40 Concept Drawing](images/cloud40_concept.png)
 
-The cloud40 is a split keyboard that allows the user to position each half wherever they want. The keys are arranged in a grid-like fashion, and the columns are then staggered to match the natural contours of the hand. There are only three rows for each finger to minimize stretching and unnecessary movement. Full functionality is achieved through one of the four thumb keys on the bottom, which toggles between letter, number, and function layers, similar to a phone keyboard. The main goal of this keyboard is to provide a comfortable typing experience for people with arthritis.
+The cloud40 is a split keyboard that allows the user to position each half wherever they want. The keys are arranged in a grid-like fashion, and the columns are then staggered to match the natural contours of the hand. There are only three rows for each finger to minimize stretching and unnecessary movement. Full functionality is achieved through one of the four thumb keys on the bottom, which toggles between letter, number, and function layers, similar to a phone keyboard. The main goal of this keyboard is to provide a more natural typing experience than traditional layouts.
 
 Each half is controlled by an Arduino Pro Micro microcontroller, which detects the keypresses and sends the information to the computer. The two microcontrollers are connected through a TRRS audio cable, since a USB connection poses a risk of the computer mistaking it for a normal connection and shorting out the device.
 
@@ -32,7 +32,7 @@ Shown above is the fully soldered assembly. For the sake of convenience, I also 
 
 ![Front View of Cloud40](images/front_view_board.jpeg)
 
-The switches I used for this keyboard were the Gateron Clears, which have a pleasantly light operating force of 35g. This should further minimize any pain or discomfort when typing on this keyboard, especially since this design is intended for people with arthritis.
+The switches I used for this keyboard were the Gateron Clears, which have a pleasantly light operating force of 35g. This should further minimize any pain or discomfort when typing on this keyboard.
 
 ## Firmware
 
